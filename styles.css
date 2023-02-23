@@ -1,0 +1,179 @@
+body {
+    background-color: #fff0f3;
+    color: #2a1768;
+}
+
+h1, h2, h3, footer, strong, button, .cake-name, .cake-price {
+    color: #4b4eca;
+}
+
+.cake-card {
+    background-color: #ffffff;
+}
+
+button {
+    border-color: #96f6e1;
+    background-color: #96f6e1;
+}
+button:hover, button:focus {
+    border-color: #b4f8ea;
+    background-color: #b4f8ea;
+}
+button:active {
+    border-color: #d9fcf5;
+    background-color: #d9fcf5;
+}
+
+a {
+    color: #ff388a;
+}
+a:hover, a:focus {
+    color: #ff70ac;
+}
+a:active {
+    color: #ffadcf;
+}
+
+h1, h2, footer {
+    text-align: center;
+}
+
+main {
+    padding: 0 12px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+footer {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+nav a {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    text-decoration: none; /* get rid of the default text decoration for links */
+}
+
+/* For consistency across browsers. Rule below taken from:
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements#inheritance_and_form_elements */
+input, button {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-size: 1.25em; /* supersede */
+    padding: 6px 12px; /* supersede */
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], .payment-details {
+    max-width: 320px;
+    width: 100%;
+}
+
+.cakes {
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline; /* align cake names for a neater layout */
+    gap: 24px 20px;
+}
+
+/* Cake card inspired by https://uiverse.io/detail/alexruix/moody-goose-93 */
+.cake-card {
+    width: 240px;
+    padding: 12px;
+    /* This box-shadow is example #9 on the following website: https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 12px;
+}
+.cake-card .cake-name {
+    padding: 6px 0;
+}
+.cake-card .cake-name, .cake-card .cake-price {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.cake-card-footer {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout {
+    padding-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 52px;
+}
+
+.cake-info {
+    width: 240px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.cake-info .cake-name, .cake-info .cake-price {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.order-form {
+    max-width: 600px;
+}
+
+.payment-details, .contact-details, .member-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.expiry-and-csc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 40px;
+}
+
+/* Wrap a single element in a div with this class to center the element and make it at most 620px wide */
+.centered-620px-width-band {
+    display: flex;
+    justify-content: center;
+}
+.centered-620px-width-band > * {
+    max-width: 620px;
+}
+
+#sign-up {
+    padding-bottom: 12px;
+}
