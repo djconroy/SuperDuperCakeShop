@@ -1,6 +1,8 @@
 # Super Duper Cake Shop
 A responsive website for a fake cake shop. The responsive design is implemented using CSS Flexbox (and a smaller cake icon for smaller screens).
 
+Note: Only the UI for payment processing is implemented.
+
 ## Screenshots
 <img src="screenshots/home-5.png"/>
 <img src="screenshots/checkout-wide.png"/>
